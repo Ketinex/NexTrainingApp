@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Trénink</title>
-<meta name="theme-color" content="#9bbc0f">
+<meta name="theme-color" content="#000000">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="manifest" href="manifest.webmanifest">
@@ -90,7 +90,7 @@ const key=n=>String(n).trim().toLowerCase();
 const iso=d=>new Date(d.getTime()-d.getTimezoneOffset()*6e4).toISOString().slice(0,10);
 const today=()=>iso(new Date());
 const dm=d=>{const p=d.split('-');return +p[2]+'. '+ +p[1]+'.'};
-const DEF={"workouts":[{"id":"384ua93","name":"Push A","archived":false,"ex":[{"name":"Lateral Raise","sets":4,"min":10,"max":15},{"name":"Flat DB Press","sets":3,"min":8,"max":12},{"name":"Incline DB Chest Press","sets":3,"min":8,"max":12},{"name":"Pec Deck Fly","sets":2,"min":10,"max":15},{"name":"Reverse Pec Deck Fly","sets":3,"min":12,"max":20},{"name":"Triceps Pushdown SA","sets":4,"min":12,"max":20},{"name":"Abdominal Crunch","sets":4,"min":10,"max":15}]},{"id":"bnoev8w","name":"Pull A","archived":false,"ex":[{"name":"Lat pulldown SA","sets":3,"min":8,"max":12},{"name":"Upper Back Row","sets":2,"min":8,"max":12},{"name":"Lateral Row SA","sets":3,"min":10,"max":15},{"name":"Upper Back Row","sets":2,"min":12,"max":20},{"name":"Preacher Curl (Machine)","sets":3,"min":10,"max":15},{"name":"Hammer Curl (Cable)","sets":3,"min":10,"max":15},{"name":"Wrist Curl (DB)","sets":2,"min":12,"max":15}]},{"id":"t17ic3w","name":"Legs A","archived":false,"ex":[{"name":"Lying Hamstring Curl","sets":4,"min":8,"max":12},{"name":"Squat Machine","sets":2,"min":8,"max":12},{"name":"Leg press","sets":3,"min":12,"max":20},{"name":"Adductor","sets":2,"min":10,"max":15},{"name":"Leg Extension","sets":3,"min":10,"max":15},{"name":"Calf Raise (Machine)","sets":4,"min":12,"max":16}]},{"id":"ygsh9om","name":"Push B","archived":false,"ex":[{"name":"Lateral Raise","sets":4,"min":10,"max":15},{"name":"Shoulder Press (Machine)","sets":3,"min":8,"max":12},{"name":"Close Grip Press (Machine)","sets":3,"min":8,"max":12},{"name":"Reverse Cable Fly SA","sets":3,"min":10,"max":15},{"name":"Pec Deck Fly","sets":3,"min":10,"max":15},{"name":"Overhead Tricep Extension","sets":4,"min":10,"max":15},{"name":"Abdominal Crunch","sets":4,"min":10,"max":15}]},{"id":"xq2zzhf","name":"Pull B","archived":false,"ex":[{"name":"Upper Back Pulldown","sets":3,"min":10,"max":15},{"name":"Upper Back Row","sets":3,"min":8,"max":12},{"name":"Lateral Row","sets":2,"min":8,"max":12},{"name":"Lat pulldown SA","sets":2,"min":12,"max":20},{"name":"Cable Curl","sets":3,"min":10,"max":15},{"name":"Hammer Curl (Preacher DB)","sets":3,"min":10,"max":15},{"name":"Wrist Curl (DB)","sets":2,"min":10,"max":15}]},{"id":"rd12zau","name":"Legs B","archived":false,"ex":[{"name":"Lying Hamstring Curl","sets":4,"min":8,"max":12},{"name":"Romanian deadlift","sets":2,"min":8,"max":12},{"name":"Split Squat","sets":3,"min":10,"max":15},{"name":"Adductor","sets":3,"min":10,"max":15},{"name":"Calf Raise (Machine)","sets":4,"min":6,"max":10}]}],"cycle":["384ua93","bnoev8w","t17ic3w","off","ygsh9om","xq2zzhf","rd12zau","off"],"ci":0,"logs":[],"cur":null,"archive":[],"pname":"J3U","lib":["Lateral Raise","Triceps pushdown","Barbell row","Lat pulldown SA","Bicep curl","Squat Machine","Romanian deadlift","Flat DB Press","Incline Chest Press","Incline DB Chest Press","Pec Deck Fly","Reverse Pec Deck Fly","Reverse Cable Fly SA","Triceps Pushdown SA","Upper Back Row","Lateral Row","Lateral Row SA","Preacher Curl (Machine)","Preacher Curl (Cable)","Preacher Curl (DB)","Hammer Curl (DB)","Hammer Curl (Cable)","Lying Hamstring Curl","Leg Press","Adductor","Leg Extension","Calf Raise (Machine)","Shoulder Press (Machine)","Close Grip Press (Machine)","Overhead Tricep Extension","Abdominal Crunch","Split Squat","Wrist Curl (Cable)","Wrist Curl (DB)","Upper Back Pulldown","Cable Curl","Hammer Curl (Preacher DB)"]};
+const DEF={"workouts":[{"id":"384ua93","name":"Push A","archived":false,"ex":[{"name":"Lateral Raise","sets":4,"min":10,"max":15},{"name":"Flat DB Press","sets":3,"min":8,"max":12},{"name":"Incline DB Chest Press","sets":3,"min":8,"max":12},{"name":"Pec Deck Fly","sets":2,"min":10,"max":15},{"name":"Reverse Pec Deck Fly","sets":3,"min":12,"max":20},{"name":"Triceps Pushdown SA","sets":4,"min":12,"max":20},{"name":"Abdominal Crunch","sets":4,"min":10,"max":15}]},{"id":"bnoev8w","name":"Pull A","archived":false,"ex":[{"name":"Lat pulldown SA","sets":3,"min":8,"max":12},{"name":"Upper Back Row","sets":2,"min":8,"max":12},{"name":"Lateral Row SA","sets":3,"min":10,"max":15},{"name":"Upper Back Row","sets":2,"min":12,"max":20},{"name":"Preacher Curl (Machine)","sets":3,"min":10,"max":15},{"name":"Hammer Curl (Cable)","sets":3,"min":10,"max":15},{"name":"Wrist Curl (DB)","sets":2,"min":12,"max":15}]},{"id":"t17ic3w","name":"Legs A","archived":false,"ex":[{"name":"Lying Hamstring Curl","sets":4,"min":8,"max":12},{"name":"Squat Machine","sets":2,"min":8,"max":12},{"name":"Leg press","sets":3,"min":12,"max":20},{"name":"Adductor","sets":2,"min":10,"max":15},{"name":"Leg Extension","sets":3,"min":10,"max":15},{"name":"Calf Raise (Machine)","sets":4,"min":12,"max":16}]},{"id":"ygsh9om","name":"Push B","archived":false,"ex":[{"name":"Lateral Raise","sets":4,"min":10,"max":15},{"name":"Shoulder Press (Machine)","sets":3,"min":8,"max":12},{"name":"Close Grip Press (Machine)","sets":3,"min":8,"max":12},{"name":"Reverse Cable Fly SA","sets":3,"min":10,"max":15},{"name":"Pec Deck Fly","sets":3,"min":10,"max":15},{"name":"Overhead Tricep Extension","sets":4,"min":10,"max":15},{"name":"Abdominal Crunch","sets":4,"min":10,"max":15}]},{"id":"xq2zzhf","name":"Pull B","archived":false,"ex":[{"name":"Upper Back Pulldown","sets":3,"min":10,"max":15},{"name":"Upper Back Row","sets":3,"min":8,"max":12},{"name":"Lateral Row","sets":2,"min":8,"max":12},{"name":"Lat pulldown SA","sets":2,"min":12,"max":20},{"name":"Cable Curl","sets":3,"min":10,"max":15},{"name":"Hammer Curl (Preacher DB)","sets":3,"min":10,"max":15},{"name":"Wrist Curl (DB)","sets":2,"min":10,"max":15}]},{"id":"rd12zau","name":"Legs B","archived":false,"ex":[{"name":"Lying Hamstring Curl","sets":4,"min":8,"max":12},{"name":"Romanian deadlift","sets":2,"min":8,"max":12},{"name":"Split Squat","sets":3,"min":10,"max":15},{"name":"Adductor","sets":3,"min":10,"max":15},{"name":"Calf Raise (Machine)","sets":4,"min":6,"max":10}]}],"cycle":["384ua93","bnoev8w","t17ic3w","off","ygsh9om","xq2zzhf","rd12zau","off"],"ci":0,"logs":[],"cur":null,"archive":[],"pname":"Trénink","lib":["Lateral Raise","Triceps pushdown","Barbell row","Lat pulldown SA","Bicep curl","Squat Machine","Romanian deadlift","Flat DB Press","Incline Chest Press","Incline DB Chest Press","Pec Deck Fly","Reverse Pec Deck Fly","Reverse Cable Fly SA","Triceps Pushdown SA","Upper Back Row","Lateral Row","Lateral Row SA","Preacher Curl (Machine)","Preacher Curl (Cable)","Preacher Curl (DB)","Hammer Curl (DB)","Hammer Curl (Cable)","Lying Hamstring Curl","Leg Press","Adductor","Leg Extension","Calf Raise (Machine)","Shoulder Press (Machine)","Close Grip Press (Machine)","Overhead Tricep Extension","Abdominal Crunch","Split Squat","Wrist Curl (Cable)","Wrist Curl (DB)","Upper Back Pulldown","Cable Curl","Hammer Curl (Preacher DB)"]};
 function seed(){return JSON.parse(JSON.stringify(DEF))}
 function seedOld(){
   const w=(n,ex)=>({id:uid(),name:n,archived:false,ex:ex.map(([name,sets,min,max])=>({name,sets,min,max}))});
@@ -113,7 +113,7 @@ function lastSets(name){const h=hist(name);return h.length?h[h.length-1].sets:[]
 function sug(x){
   const l=lastSets(x.name);if(!l.length)return null;
   const top=Math.max(...l.map(s=>s.w)),f=l.find(s=>s.w===top),mid=(x.min+x.max)/2;
-  if(f.r>mid)return {w:+(top+STEP),r:x.min,up:true};
+  if(f.r>mid)return {w:+(top+stepOf(x.name)).toFixed(2),r:x.min,up:true};
   return {w:top,r:Math.min(f.r+1,x.max),up:false};
 }
 function vol(l){let v=0;for(const e of l.entries)for(const s of e.sets)if(!s.warm)v+=s.w*s.r;return v}
@@ -124,7 +124,7 @@ function trend(wid){
 }
 function wIdx(e,si){let n=0;for(let i=0;i<=si;i++)if(!e.sets[i].warm)n++;return n}
 function cls(e,si){
-  const s=e.sets[si];if(s.warm||!(+s.r>0)||!(+s.w>0))return '';
+  const s=e.sets[si];if(S.cur&&S.cur.retro)return '';if(s.warm||!(+s.r>0)||!(+s.w>0))return '';
   const l=lastSets(e.name);if(!l.length)return '';
   const w=+s.w,r=+s.r;
   if(w>Math.max(...l.map(x=>x.w)))return 'g';
@@ -139,11 +139,11 @@ function weekChart(){
   const now=new Date(),dow=(now.getDay()+6)%7,nm=['Po','Út','St','Čt','Pá','So','Ne'];
   const mon=new Date(now);mon.setDate(now.getDate()-dow);
   const ps=w=>w?w.ex.reduce((a,x)=>a+x.sets,0):0;
-  const off0=S.logs.some(l=>l.date===today())?1:0;
+  const off0=S.logs.some(l=>l.date===today()&&!l.old)?1:0;
   const cols=[];
   for(let i=0;i<7;i++){
     const d=new Date(mon);d.setDate(mon.getDate()+i);
-    const lg=S.logs.filter(l=>l.date===iso(d));
+    const lg=S.logs.filter(l=>l.date===iso(d)&&!l.old);
     let done=0,plan=0,off=false;
     if(lg.length){lg.forEach(l=>{l.entries.forEach(e=>e.sets.forEach(s=>{if(!s.warm)done++}));plan+=ps(wById(l.wid))});plan=Math.max(plan,done)}
     else if(i>=dow&&S.cycle.length){const id=S.cycle[(S.ci+i-dow-off0)%S.cycle.length];if(id==='off')off=true;else plan=ps(wById(id))}
@@ -168,13 +168,13 @@ function start(wid){
   save();render();window.scrollTo(0,0);
 }
 function pick(i){S.ci=i;save();render()}
-function cancelW(){S.cur=null;save();render()}
+function cancelW(){const r=S.cur&&S.cur.retro;S.cur=null;if(r){tab='s';histSel='list'}save();render()}
 function skipDay(){S.ci=(S.ci+1)%S.cycle.length;save();render()}
 function finish(){
   const c=S.cur;
   const entries=c.entries.map(e=>({name:e.name,sets:e.sets.filter(s=>+s.w>0&&+s.r>0).map(s=>({w:+s.w,r:+s.r,rir:s.rir===''?null:+s.rir,warm:!!s.warm}))})).filter(e=>e.sets.some(s=>!s.warm));
-  if(entries.length){S.logs.push({id:uid(),date:today(),wid:c.wid,entries});const i=S.cycle.indexOf(c.wid);if(i>=0)S.ci=(i+1)%S.cycle.length}
-  S.cur=null;save();render();
+  if(entries.length){S.logs.push({id:uid(),date:c.retro?c.date:today(),wid:c.wid,entries,old:c.retro?1:undefined});if(c.retro)S.logs.sort((a,b)=>a.date<b.date?-1:a.date>b.date?1:0);else{const i=S.cycle.indexOf(c.wid);if(i>=0)S.ci=(i+1)%S.cycle.length}}
+  S.cur=null;if(c.retro){tab='s';histSel='list'}save();render();
 }
 function upd(ei,si,f,el){
   const e=S.cur.entries[ei];e.sets[si][f]=el.value;save();
@@ -198,16 +198,16 @@ function rowH(ei,si){
 }
 function vActive(){
   const c=S.cur;
-  let h=`<div class="bar sp"><h2>${esc(c.name)}</h2><button onclick="cancelW()" class="s">Zrušit</button></div>`;
+  let h=`<div class="bar sp"><h2>${esc(c.name)}</h2><button onclick="cancelW()" class="s">Zrušit</button></div>`+(c.retro?`<div class="card"><div class="mut">Starý trénink: zapiš, co jsi tehdy zvedl. Datum:</div><input type="date" value="${c.date}" max="${today()}" onchange="S.cur.date=this.value;save()"></div>`:'');
   c.entries.forEach((e,ei)=>{
-    const l=lastSets(e.name),g=sug({name:e.name,min:e.min,max:e.max});
+    const l=c.retro?[]:lastSets(e.name),g=c.retro?null:sug({name:e.name,min:e.min,max:e.max});
     h+=`<div class="card"><h3>${esc(e.name)} <span class="mut">(${e.min}–${e.max} opak.)</span></h3>
-<div class="mut">Minule: ${esc(fmtSets(l))}</div>
+${c.retro?'':`<div class="mut">Minule: ${esc(fmtSets(l))}</div>`}<input placeholder="Poznámka (sedák, nastavení…)" value="${esc(S.note[key(e.name)]||'')}" data-n="${esc(e.name)}" onchange="S.note[key(this.dataset.n)]=this.value;save()" style="margin:6px 0">
 ${g?`<div class="mut">Návrh: <b>${g.w} kg</b>, cíl ${g.r}+ opak. ${g.up?'<span class="g">(přidat váhu)</span>':''}</div>`:''}
 ${e.sets.map((_,si)=>rowH(ei,si)).join('')}
 <div class="bar"><button class="s" onclick="addSet(${ei})">+ série</button><button class="s" onclick="addWarm(${ei})">+ zahřívací</button></div><div style="margin-top:8px">${libSel('','swapEx('+ei+',this.value)','Vyměnit cvik jen dnes…')}</div></div>`;
   });
-  return h+`<button class="p" style="width:100%" onclick="finish()">Dokončit trénink</button>`;
+  return h+`<button class="p" style="width:100%" onclick="finish()">${c.retro?'Uložit do historie':'Dokončit trénink'}</button>`;
 }
 function vHome(){
   if(S.cur)return vActive();
@@ -250,7 +250,7 @@ function libRen(o,v){
   v=v.trim();if(!v||v===o)return;
   if(S.lib.some(x=>key(x)===key(v)&&x!==o)){render();return}
   const k=key(o),ch=e=>{if(key(e.name)===k)e.name=v};
-  S.lib=S.lib.map(x=>x===o?v:x);
+  S.lib=S.lib.map(x=>x===o?v:x);['mg','step','note'].forEach(f=>{if(S[f]&&S[f][k]!==undefined){S[f][key(v)]=S[f][k];delete S[f][k]}});
   [...S.workouts,...S.archive.flatMap(a=>a.workouts)].forEach(w=>w.ex.forEach(ch));
   S.logs.forEach(l=>l.entries.forEach(ch));
   if(S.cur)S.cur.entries.forEach(ch);
@@ -262,7 +262,7 @@ function vPlans(){
   let h='<h2>Program</h2><div class="card"><div class="bar"><input value="'+esc(S.pname)+'" onchange="S.pname=this.value.trim()||S.pname;save()" style="flex:1"><button class="s" onclick="archProg()">Archivovat</button></div><div class="mut">Archivace uloží celý program (tréninky i rotaci). Historie cviků zůstává.</div>'+S.archive.map((a,i)=>'<div class="bar sp" style="margin-top:8px"><span>'+esc(a.name)+' <span class="mut">('+a.workouts.length+' tréninků)</span></span><button class="s" onclick="restProg('+i+')">Obnovit</button></div>').join('')+'</div><h2>Rotace</h2><div class="card"><div class="mut">Pořadí dnů, které se opakuje. Klepnutím na ✕ den odebereš.</div><div>'
    +S.cycle.map((id,i)=>`<span class="chip">${id==='off'?'volno':esc((wById(id)||{name:'?'}).name)} <a onclick="cyDel(${i})" style="cursor:pointer">✕</a></span>`).join('')+'</div>'
    +`<div class="bar" style="margin-top:8px"><select id="cysel" style="flex:1"><option value="off">volno</option>${S.workouts.filter(w=>!w.archived).map(w=>`<option value="${w.id}">${esc(w.name)}</option>`).join('')}</select><button onclick="cyAdd()">Přidat</button></div></div>`;
-  h+='<h2>Cviky</h2><div class="card"><div class="mut">Jednou si založ názvy cviků, v trénincích je pak jen vybíráš. Přejmenování se promítne i do historie.</div><div class="bar" style="margin:8px 0"><input id="newex" placeholder="Název cviku" style="flex:1"><button onclick="libAdd()">Přidat</button></div>'+sortL().map(n=>`<div class="bar" style="margin:6px 0"><input value="${esc(n)}" data-o="${esc(n)}" onchange="libRen(this.dataset.o,this.value)" style="flex:1"><button class="x" data-o="${esc(n)}" onclick="libDel(this.dataset.o)" aria-label="Smazat z knihovny">✕</button></div>`).join('')+'</div><h2>Tréninky</h2>';
+  h+='<h2>Cviky</h2><div class="card"><div class="mut">Jednou si založ názvy cviků, v trénincích je pak jen vybíráš. Přejmenování se promítne i do historie.</div><div class="bar" style="margin:8px 0"><input id="newex" placeholder="Název cviku" style="flex:1"><button onclick="libAdd()">Přidat</button></div>'+sortL().map(n=>`<div style="margin:10px 0;border-top:1px solid var(--ln);padding-top:8px"><div class="bar"><input value="${esc(n)}" data-o="${esc(n)}" onchange="libRen(this.dataset.o,this.value)" style="flex:1"><button class="x" data-o="${esc(n)}" onclick="libDel(this.dataset.o)" aria-label="Smazat z knihovny">✕</button></div><div class="bar" style="margin-top:6px"><select data-o="${esc(n)}" onchange="setMG(this.dataset.o,this.value)" style="flex:1">${MGS.map(g=>`<option${S.mg[key(n)]===g?' selected':''}>${g}</option>`).join('')}</select><input type="number" inputmode="decimal" step="any" placeholder="krok kg" value="${S.step[key(n)]||''}" data-o="${esc(n)}" onchange="setStep(this.dataset.o,this.value)" style="width:90px"></div></div>`).join('')+'</div><h2>Tréninky</h2>';
   S.workouts.forEach((w,i)=>{
     h+=`<div class="card" ${w.archived?'style="opacity:.65"':''}><div class="bar"><input value="${esc(w.name)}" onchange="ren(${i},this.value)" style="flex:1"><button class="s" onclick="arch(${i})">${w.archived?'Obnovit':'Archivovat'}</button></div>`;
     if(!w.archived){
@@ -283,14 +283,15 @@ function chart(h){
   return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Nejvyšší váha v čase"><line class="ax" x1="${p}" y1="${H-p}" x2="${W-p}" y2="${H-p}"/><polyline class="ln" points="${pt.map(q=>q.join(',')).join(' ')}"/>${pt.map(q=>`<circle class="dt" cx="${q[0]}" cy="${q[1]}" r="3.5"/>`).join('')}<text class="lb" x="2" y="${pt[0][1]+4}">${v[0]}</text><text class="lb" x="${W-2}" y="${pt[pt.length-1][1]-8}" text-anchor="end">${v[v.length-1]} kg</text></svg>`;
 }
 function vStats(){
+  if(histSel!==null)return vHist();
   if(exSel){
     const h=hist(exSel);
     return `<button class="s" onclick="exSel=null;render()">← Zpět</button><h2>${esc(exSel)}</h2><div class="card"><div class="bar" style="margin-bottom:8px">${[['w','Váha'],['v','Objem'],['e','Odhad 1RM']].map(([k,n])=>`<button class="s ${exMet===k?'p':''}" onclick="exMet='${k}';render()">${n}</button>`).join('')}</div>${chart(h)}<div class="mut">Rekord váhy: ${Math.max(...h.flatMap(x=>x.sets.map(s=>s.w)))} kg · odhad 1RM podle Epleyho vzorce</div></div><div class="card">`+h.slice().reverse().map(x=>`<div style="margin:6px 0"><b>${dm(x.date)}</b> <span class="mut">${esc(fmtSets(x.sets))}</span></div>`).join('')+'</div>';
   }
   const names={};for(const l of S.logs)for(const e of l.entries)names[key(e.name)]=e.name;
   const ks=Object.keys(names).sort();
-  let h='<h2>Statistiky</h2>';
-  if(!ks.length)return h+'<div class="card mut">Zatím žádné tréninky. Po prvním dokončeném tréninku se tu objeví cviky.</div>';
+  let h='<h2>Statistiky</h2><button class="s" onclick="histSel=\'list\';render()">Historie tréninků</button>';
+  if(!ks.length)return h+'<div class="card mut">Zatím žádné tréninky. Po prvním dokončeném tréninku se tu objeví cviky. Máš starší záznamy? Přidej je v Historii tréninků.</div>';
   window.__ks=ks.map(k=>names[k]);
   return h+ks.map((k,ki)=>{const hh=hist(names[k]),l=hh[hh.length-1];return `<div class="card bar sp" onclick="exSel=window.__ks[${ki}];render()" style="cursor:pointer"><div><b>${esc(names[k])}</b><div class="mut">${hh.length}× · minule ${esc(fmtSets(l.sets))}</div></div><span>›</span></div>`}).join('');
 }
@@ -320,18 +321,20 @@ function aiText(){
   const nm=id=>id==='off'?'volno':(wById(id)||{name:'?'}).name;
   const fs=s=>s.w+'×'+s.r+(s.rir!=null?'('+s.rir+')':'');
   const top=a=>Math.max(...a.map(s=>s.w)),e1=a=>Math.max(...a.map(s=>s.w*(1+s.r/30))),vl=a=>a.reduce((t,s)=>t+s.w*s.r,0);
-  let t='Jsem hobby cvičenec a níže jsou data z mého tréninkového deníku. Vyhodnoť můj progres: kde rostu, kde stagnuji, jestli správně navyšuji váhu, jaký je objem a pravidelnost, a navrhni konkrétní úpravy (váhy, počty sérií, rozsahy opakování, zařazení cviků).\n\n';
+  let t=''+aiHead()+'\n\n';
   t+='PROGRAM: '+S.pname+'\nROTACE: '+S.cycle.map(nm).join(' > ')+'\n';
-  t+='PRAVIDLA: dvojitá progrese; váhu přidávám o '+STEP+' kg, když první pracovní série na nejvyšší váze překročí polovinu rozsahu opakování, jinak přidávám opakování. Zahřívací série v datech nejsou. Zápis série: kg×opakování(RIR).\n';
+  t+='PRAVIDLA: dvojitá progrese; váhu přidávám o krok uvedený u cviku (výchozí '+STEP+' kg), když první pracovní série na nejvyšší váze překročí polovinu rozsahu opakování, jinak přidávám opakování. Zahřívací série v datech nejsou. Zápis série: kg×opakování(RIR).\n';
   t+='PLÁN TRÉNINKŮ:\n'+S.workouts.filter(w=>!w.archived).map(w=>'- '+w.name+': '+w.ex.map(x=>x.name+' '+x.sets+'×'+x.min+'–'+x.max).join('; ')).join('\n')+'\n';
   const wk=expDays?expDays/7:(L.length?Math.max(1,(Date.now()-new Date(L[0].date))/6048e5):1);
   t+='\nOBDOBÍ: '+(expDays?'posledních '+expDays/7+' týdnů':'celá historie')+'; tréninků: '+L.length+' (průměr '+(L.length/wk).toFixed(1)+' za týden)\n';
   const names={};L.forEach(l=>l.entries.forEach(e=>{names[key(e.name)]=e.name}));
+  const gs={};L.forEach(l=>l.entries.forEach(e=>{const g=S.mg[key(e.name)]||'Ostatní';gs[g]=(gs[g]||0)+e.sets.filter(s=>!s.warm).length}));
+  t+='PRŮMĚRNÝ TÝDENNÍ POČET PRACOVNÍCH SÉRIÍ NA SVALOVOU SKUPINU: '+Object.keys(gs).sort((a,b)=>gs[b]-gs[a]).map(g=>g+' '+(gs[g]/wk).toFixed(1)).join(', ')+'\n';
   Object.keys(names).sort().forEach(k=>{
     const ses=[];L.forEach(l=>l.entries.forEach(e=>{if(key(e.name)===k){const w=e.sets.filter(s=>!s.warm);if(w.length)ses.push({d:l.date,s:w})}}));
     if(!ses.length)return;
     const a=ses[0].s,b=ses[ses.length-1].s;
-    t+='\n## '+names[k]+' ('+ses.length+'× | nejvyšší váha '+top(a)+' → '+top(b)+' kg | odhad 1RM '+Math.round(e1(a))+' → '+Math.round(e1(b))+' kg | objem '+Math.round(vl(a))+' → '+Math.round(vl(b))+' kg)\n';
+    t+='\n## '+names[k]+' ['+(S.mg[k]||'')+', krok '+stepOf(names[k])+' kg'+(S.note[k]?', poznámka: '+S.note[k]:'')+'] ('+ses.length+'× | nejvyšší váha '+top(a)+' → '+top(b)+' kg | odhad 1RM '+Math.round(e1(a))+' → '+Math.round(e1(b))+' kg | objem '+Math.round(vl(a))+' → '+Math.round(vl(b))+' kg)\n';
     ses.forEach(x=>{t+=x.d+': '+x.s.map(fs).join(', ')+'\n'});
   });
   if(!L.length)t+='\n(V tomto období nejsou žádné zaznamenané tréninky.)\n';
@@ -342,6 +345,48 @@ function aiCard(){
   return `<div class="card"><div class="mut">Souhrn tréninků jako text. Zkopíruj a vlož do libovolné AI.</div><div style="margin:8px 0">${P.map(p=>`<span class="chip ${expDays===p[0]?'on':''}" onclick="setP(${p[0]})" style="cursor:pointer;padding:10px 14px">${p[1]}</span>`).join('')}</div><textarea id="aiout" readonly style="min-height:220px">${esc(aiText())}</textarea><button class="p" style="margin-top:8px" onclick="aiCopy(this)">Kopírovat text</button></div>`;
 }
 function aiCopy(b){const t=$('#aiout');t.select();try{navigator.clipboard.writeText(t.value).then(()=>{b.textContent='Zkopírováno ✔'},()=>{b.textContent='Označeno, zkopíruj ručně'})}catch(e){b.textContent='Označeno, zkopíruj ručně'}}
+const MGS=['Hrudník','Záda','Ramena','Biceps','Triceps','Předloktí','Quadricepsy','Hamstringy','Hýždě','Lýtka','Adduktory','Břicho','Ostatní'];
+function guess(n){const s=n.toLowerCase(),R=[[/hamstring|romanian|rdl/,'Hamstringy'],[/wrist/,'Předloktí'],[/tricep|pushdown/,'Triceps'],[/curl/,'Biceps'],[/calf/,'Lýtka'],[/adductor/,'Adduktory'],[/crunch|abdominal/,'Břicho'],[/raise|shoulder|reverse/,'Ramena'],[/pulldown|row|pull-up|chin/,'Záda'],[/squat|leg press|leg extension/,'Quadricepsy'],[/press|fly|chest|bench|pec/,'Hrudník']];for(const [re,g] of R)if(re.test(s))return g;return 'Ostatní'}
+const stepOf=n=>+S.step[key(n)]||STEP;
+function setMG(o,v){S.mg[key(o)]=v;save()}
+function setStep(o,v){const x=parseFloat(String(v).replace(',','.'));if(x>0)S.step[key(o)]=x;else delete S.step[key(o)];save();render()}
+const PF=[['goal','Cíl','s',['','Svaly (hypertrofie)','Síla','Svaly i síla','Hubnutí a udržení svalů']],['exp','Zkušenost s cvičením','s',['','do 1 roku','1–3 roky','3–6 let','6+ let']],['age','Věk','n'],['height','Výška (cm)','n'],['weight','Váha (kg)','n'],['days','Dnů cvičení týdně','n'],['limits','Zranění a omezení','t'],['focus','Priority a slabé partie','t']];
+function profCard(){return '<div class="card"><div class="mut">Vše je volitelné a zůstává jen v zařízení. Přidá se do výstupu pro AI.</div>'+PF.map(([k,l,t,o])=>`<div style="margin-top:8px"><div class="mut">${l}</div>`+(t==='s'?`<select onchange="setPf('${k}',this.value)">${o.map(x=>`<option${S.profile[k]===x?' selected':''}>${x}</option>`).join('')}</select>`:`<input ${t==='n'?'type="number" inputmode="decimal"':''} value="${esc(S.profile[k]||'')}" onchange="setPf('${k}',this.value)">`)+'</div>').join('')+'</div>'}
+function setPf(k,v){S.profile[k]=String(v).trim();save()}
+function profTxt(){const p=S.profile||{},L=[['goal','cíl'],['exp','zkušenost'],['age','věk'],['height','výška cm'],['weight','váha kg'],['days','dnů cvičení týdně'],['limits','zranění a omezení'],['focus','priority a slabé partie']].filter(([k])=>p[k]).map(([k,n])=>n+': '+p[k]);return 'PROFIL: '+(L.length?L.join('; '):'nevyplněn (zeptej se mě na to, co potřebuješ)')}
+function aiHead(){return ['Jednej jako zkušený trenér silového tréninku a hypertrofie, který se opírá o důkazy a data. Cílem je maximální dlouhodobý pokrok podle mého profilu a omezení. Pracuj jen s daty níže, nic si nevymýšlej a nechval mě zbytečně: když je něco špatně, řekni to přímo. Pokud data na závěr nestačí (málo tréninků, chybí RIR), napiš to a řekni, co mám zapisovat.','','ÚKOLY:','1. Progres po cviku: roste váha, opakování, odhad 1RM nebo objem? Označ cviky, které rostou, stagnují (3 a více tréninků bez pokroku) nebo klesají, a navrhni pravděpodobnou příčinu.','2. Správnost navyšování: dodržuji dvojitou progresi? Přidávám váhu příliš brzy nebo pozdě?','3. Objem a rozložení: porovnej průměrný týdenní počet pracovních sérií na svalovou skupinu s běžně doporučovanými rozsahy pro můj cíl a zkušenost. Ukaž přebytky i mezery.','4. Intenzita a únava: využij RIR, pokud je zapsán. Posuď, zda trénuji dost blízko selhání a zda je vhodný deload.','5. Frekvence a pravidelnost: dodržuji plán a jak často trénuje každá partie?','6. Výběr cviků a struktura: navrhni konkrétní změny (přidat, ubrat, vyměnit, upravit série a rozsah opakování), jen když mají oporu v datech.','','FORMÁT ODPOVĚDI: (a) shrnutí na 3 až 5 vět, (b) tabulka cviků se stavem a doporučením, (c) tři nejdůležitější priority v pořadí, (d) konkrétní plán na další 2 týdny s váhami a opakováními u každého cviku, (e) co mám sledovat nebo zapisovat navíc. Odpovídej česky, stručně a konkrétně. Nejsi lékař: při bolesti nebo zranění mě odkaž na odborníka.','',profTxt()].join('\n')}
+let histSel=null,confDel=false;
+function vHist(){
+  if(histSel==='new')return vRetro();
+  if(histSel==='list'){
+    const ls=S.logs.slice().reverse();
+    return '<button class="s" onclick="histSel=null;render()">← Zpět</button><h2>Historie</h2><button class="p" onclick="histSel=\'new\';render()">+ Přidat starý trénink</button><div style="height:10px"></div>'+(ls.map(l=>`<div class="card bar sp" onclick="histSel='${l.id}';confDel=false;render()" style="cursor:pointer"><div><b>${dm(l.date)}</b> ${esc((wById(l.wid)||{name:'?'}).name)}<div class="mut">${l.entries.length} cviků${l.old?' · starý záznam':''}</div></div><span>›</span></div>`).join('')||'<div class="mut">Žádné tréninky.</div>');
+  }
+  const l=S.logs.find(x=>x.id===histSel);if(!l){histSel='list';return vHist()}
+  let h=`<button class="s" onclick="histSel='list';render()">← Zpět</button><h2>${esc((wById(l.wid)||{name:'Trénink'}).name)}</h2><input type="date" value="${l.date}" onchange="hDate('${l.id}',this.value)">`;
+  l.entries.forEach((e,ei)=>{h+=`<div class="card"><h3>${esc(e.name)}</h3>`+e.sets.map((s,si)=>`<div class="row"><span class="tag">${s.warm?'zahř.':'#'+(si+1)}</span><input type="number" inputmode="decimal" value="${s.w}" onchange="hSet('${l.id}',${ei},${si},'w',this.value)"><input type="number" inputmode="numeric" value="${s.r}" onchange="hSet('${l.id}',${ei},${si},'r',this.value)"><input type="number" inputmode="numeric" placeholder="RIR" value="${s.rir==null?'':s.rir}" onchange="hSet('${l.id}',${ei},${si},'rir',this.value)"><button class="x" onclick="hDel('${l.id}',${ei},${si})" aria-label="Smazat sérii">✕</button></div>`).join('')+'</div>'});
+  return h+`<button class="p" style="width:100%;margin-top:8px" onclick="hKill('${l.id}')">${confDel?'Opravdu smazat trénink?':'Smazat celý trénink'}</button>`;
+}
+function hDate(id,v){const l=S.logs.find(x=>x.id===id);if(l&&v){l.date=v;S.logs.sort((a,b)=>a.date<b.date?-1:a.date>b.date?1:0);save();render()}}
+function hSet(id,ei,si,f,v){const s=S.logs.find(x=>x.id===id).entries[ei].sets[si];if(v!==''){s[f]=+v}else if(f==='rir')s[f]=null;save()}
+function hDel(id,ei,si){const l=S.logs.find(x=>x.id===id);l.entries[ei].sets.splice(si,1);if(!l.entries[ei].sets.length)l.entries.splice(ei,1);if(!l.entries.length){S.logs=S.logs.filter(x=>x!==l);histSel='list'}save();render()}
+function hKill(id){if(!confDel){confDel=true;render();return}S.logs=S.logs.filter(x=>x.id!==id);confDel=false;histSel='list';save();render()}
+function expFile(){const b=new Blob([JSON.stringify(S)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='trenink-zaloha-'+today()+'.json';document.body.appendChild(a);a.click();a.remove();S.lastBackup=today();save()}
+function impFile(el){const f=el.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{$('#imp').value=r.result};r.readAsText(f)}
+let rD=today(),rW='';
+function vRetro(){
+  const act=S.workouts.filter(w=>!w.archived);
+  if(!rW||!wById(rW))rW=act[0]?act[0].id:'';
+  const back=`<button class="s" onclick="histSel='list';render()">← Zpět</button><h2>Starý trénink</h2>`;
+  if(S.cur&&!S.cur.retro)return back+'<div class="card mut">Nejdřív dokonči nebo zruš rozdělaný trénink.</div>';
+  if(!act.length)return back+'<div class="card mut">Nejdřív vytvoř trénink v Plánech.</div>';
+  return back+`<div class="card"><div class="mut">Datum</div><input type="date" value="${rD}" max="${today()}" onchange="rD=this.value"><div class="mut" style="margin-top:8px">Trénink</div><select onchange="rW=this.value">${act.map(w=>`<option value="${w.id}"${w.id===rW?' selected':''}>${esc(w.name)}</option>`).join('')}</select><button class="p" style="width:100%;margin-top:12px" onclick="startRetro()">Pokračovat</button></div>`;
+}
+function startRetro(){
+  if(!rW||!rD)return;const w=wById(rW);
+  S.cur={wid:rW,name:w.name,retro:true,date:rD,entries:w.ex.map(x=>({name:x.name,min:x.min,max:x.max,sets:Array.from({length:x.sets},()=>({w:'',r:'',rir:'',warm:false}))}))};
+  histSel=null;tab='t';save();render();window.scrollTo(0,0);
+}
 function expCopy(){const t=$('#exp');t.select();try{navigator.clipboard.writeText(t.value).then(()=>{S.lastBackup=today();save()},()=>{})}catch(e){}}
 function imp(){
   const t=$('#imp').value.trim();if(!t)return;
@@ -351,21 +396,21 @@ function imp(){
   S=d;confirmImp=false;save();tab='t';render();
 }
 function vBackup(){
-  return `<h2>Vzhled</h2>${themeCards()}<h2>Výstup pro AI</h2>${aiCard()}<h2>Záloha</h2><div class="card"><div class="mut">Data jsou jen v prohlížeči tohoto telefonu. Občas si je zkopíruj a ulož někam bokem (poznámky, e-mail sobě).</div>
-<textarea id="exp" readonly>${esc(JSON.stringify(S))}</textarea><button class="p" style="margin-top:8px" onclick="expCopy()">Kopírovat zálohu</button></div>
-<div class="card"><h3>Výchozí data</h3><div class="mut">Načte cviky, tréninky a rotaci programu J3U z této verze stránky. Historie tréninků zůstane.</div><button style="margin-top:8px" onclick="loadDef()">${confDef?'Opravdu přepsat plány?':'Načíst výchozí data'}</button></div>
-<div class="card"><h3>Obnovit ze zálohy</h3><textarea id="imp" placeholder="Vlož zálohu sem"></textarea><button style="margin-top:8px" onclick="imp()">${confirmImp?'Opravdu přepsat všechna data?':'Načíst zálohu'}</button></div>`;
+  return `<h2>Vzhled</h2>${themeCards()}<h2>Profil</h2>${profCard()}<h2>Výstup pro AI</h2>${aiCard()}<h2>Záloha</h2><div class="card"><div class="mut">Data jsou jen v prohlížeči tohoto telefonu. Občas si je zkopíruj a ulož někam bokem (poznámky, e-mail sobě).</div>
+<textarea id="exp" readonly>${esc(JSON.stringify(S))}</textarea><button class="p" style="margin-top:8px" onclick="expCopy()">Kopírovat zálohu</button> <button style="margin-top:8px" onclick="expFile()">Stáhnout soubor</button></div>
+<div class="card"><h3>Výchozí data</h3><div class="mut">Načte cviky, tréninky a rotaci výchozího programu z této verze stránky. Historie tréninků zůstane.</div><button style="margin-top:8px" onclick="loadDef()">${confDef?'Opravdu přepsat plány?':'Načíst výchozí data'}</button></div>
+<div class="card"><h3>Obnovit ze zálohy</h3><input type="file" accept=".json,application/json" onchange="impFile(this)" style="margin-bottom:8px"><textarea id="imp" placeholder="Vlož zálohu sem nebo vyber soubor"></textarea><button style="margin-top:8px" onclick="imp()">${confirmImp?'Opravdu přepsat všechna data?':'Načíst zálohu'}</button></div>`;
 }
 
 /* ---------- shell ---------- */
 function render(){
-  S.theme=S.theme||'lcd';document.documentElement.setAttribute('data-t',S.theme);
+  S.theme=S.theme||'day';S.lib=S.lib||[];S.mg=S.mg||{};S.step=S.step||{};S.note=S.note||{};S.profile=S.profile||{};S.lib.forEach(n=>{if(!S.mg[key(n)])S.mg[key(n)]=guess(n)});document.documentElement.setAttribute('data-t',S.theme);
   const v={t:vHome,p:vPlans,s:vStats,b:vBackup}[tab]();
   $('#app').innerHTML=v;
   const items=[['t','Trénink'],['p','Plány'],['s','Statistiky'],['b','Nastavení']];
   $('#nav').innerHTML=items.map(([k,n])=>`<button class="${tab===k?'on':''}" onclick="go('${k}')">${n}</button>`).join('');
 }
-function go(k){tab=k;exSel=null;confirmImp=false;confDef=false;render();window.scrollTo(0,0)}
+function go(k){tab=k;exSel=null;confirmImp=false;confDef=false;histSel=null;confDel=false;render();window.scrollTo(0,0)}
 load();render();
 </script>
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("./sw.js").catch(function(){})})}</script>
